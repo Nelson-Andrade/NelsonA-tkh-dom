@@ -8,6 +8,22 @@
 
 <body>
     <h1 id="title"></h1>
+
+    <h1 id="main-heading">Hello, World!</h1> 
+    <p class="description">This is a paragraph.</p> 
+    <button id="changeText">Change Text</button>
+
+    <script>
+        document.querySelector("#changeText").addEventListener("click", function () {
+            let paragraph = document.querySelector(".description");
+            paragraph.innerText = "The text has been changed!";
+
+            let firstHeader = document.querySelector("h1");
+            firstHeader.innerText = "I've been here all along!";
+
+        });
+    </script>
+
     <script type="text/javascript" src="./script.js"></script>
 </body>
 </HTML>
